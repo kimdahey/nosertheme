@@ -126,7 +126,6 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
 }
 
 .site-header:after {
@@ -197,7 +196,9 @@ body {
     align-items: flex-start;
     overflow-y: hidden;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .site-nav-left {
@@ -262,7 +263,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: black;
     opacity: 0.8;
 }
 
@@ -304,7 +305,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: black;
 }
 
 .social-link-fb svg {
@@ -350,7 +351,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: black;
 }
 
 @media (max-width: 700px) {
