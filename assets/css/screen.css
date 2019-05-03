@@ -150,12 +150,9 @@ body {
 .site-header-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 10vw 4vw;
     min-height: 200px;
     max-height: 450px;
-    text-align: center;
 }
 
 .site-title {
@@ -167,7 +164,7 @@ body {
 }
 
 .site-logo {
-    max-height: 45px;
+    max-height: 100px;
 }
 
 .site-description {
