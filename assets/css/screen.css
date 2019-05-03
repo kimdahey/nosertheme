@@ -150,7 +150,6 @@ body {
 .site-header-content {
     display: flex;
     flex-direction: column;
-    padding: 10vw 4vw;
     min-height: 200px;
     max-height: 450px;
 }
