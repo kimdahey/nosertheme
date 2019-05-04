@@ -2249,6 +2249,10 @@ Usage (In Ghost editor):
     color: rgba(255,255,255,1);
     text-decoration: none;
 }
+.site-footer-content span:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
 
 .site-footer-nav {
     display: flex;
