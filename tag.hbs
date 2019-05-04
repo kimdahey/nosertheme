@@ -2,7 +2,7 @@
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
 {{#tag}}
-{{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
+<!-- {{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
@@ -16,6 +16,21 @@
         {{> "site-nav"}}
         <h1 class="site-title">{{name}}</h1>
     </div>
+</header> -->
+{{> header background=@site.cover_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {{#if @site.logo}}
+                    <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                {{else}}
+                    {{@site.title}}
+                {{/if}}
+            </h1>
+        </div>
+        {{> "site-nav"}}
+    </div>
+    <h2 class="site-title">{{name}}</h2>
 </header>
 {{/tag}}
 
