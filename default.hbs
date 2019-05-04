@@ -94,13 +94,8 @@
                     {{@site.title}}
                 {{/if}}
             </h1>
-            {{^is "home"}}
-              {{> "site-nav"}}
-            {{/is}}
         </div>
-        {{#is "home"}}
         {{> "site-nav"}}
-        {{/is}}
     </div>
 </header>
 <body class="{{body_class}}">
