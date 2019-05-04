@@ -84,6 +84,21 @@
 </style>
 
 </head>
+{{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {{#if @site.logo}}
+                    <a href="{{@site.url}}"> <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" /> </a>
+                {{else}}
+                    {{@site.title}}
+                {{/if}}
+            </h1>
+        </div>
+        {{> "site-nav"}}
+        <h1 class="site-title">{{name}}</h1>
+    </div>
+</header>
 <body class="{{body_class}}">
 
     <div class="site-wrapper">
