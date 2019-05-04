@@ -2270,7 +2270,22 @@ Usage (In Ghost editor):
     background: #fff;
     border-radius: 100%;
 }
+.site-footer-nav span {
+    position: relative;
+    margin-left: 20px;
+}
 
+.site-footer-nav span:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -11px;
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 100%;
+}
 .site-footer-nav a:first-of-type:before {
     display: none;
 }
