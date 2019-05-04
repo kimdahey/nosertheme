@@ -58,6 +58,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin-top: -70px;
+}
+.home-template .site-wrapper{
+  margin-top: 0px; 
 }
 
 .site-main {
@@ -2302,4 +2306,8 @@ Usage (In Ghost editor):
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
+}
+
+.generatedTitle{
+  text-align: center;
 }
