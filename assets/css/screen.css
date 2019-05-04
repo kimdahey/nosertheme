@@ -2235,7 +2235,12 @@ Usage (In Ghost editor):
     color: rgba(255,255,255,0.7);
     font-size: 1.3rem;
 }
-
+.site-footer-content section {
+    color: rgba(255,255,255,0.7);
+}
+.site-footer-content p {
+    color: rgba(255,255,255,0.7);
+}
 .site-footer-content a {
     color: rgba(255,255,255,0.7);
 }
