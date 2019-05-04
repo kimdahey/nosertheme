@@ -2238,7 +2238,7 @@ Usage (In Ghost editor):
 .site-footer-content section {
     color: rgba(255,255,255,0.7);
 }
-.site-footer-content p {
+.site-footer-content span {
     color: rgba(255,255,255,0.7);
 }
 .site-footer-content a {
