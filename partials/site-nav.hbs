@@ -1,14 +1,12 @@
 <nav class="site-nav">
     <div class="site-nav-left">
-        {{^is "home"}}
+        <!-- {{^is "home"}} -->
             {{#if @site.logo}}
-                <!-- <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a> -->
-                <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+                <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
             {{else}}
-              <!-- <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a> -->
                 <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
             {{/if}}
-        {{/is}}
+        <!-- {{/is}} -->
         {{#if @site.navigation}}
             {{navigation}}
         {{/if}}
