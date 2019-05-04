@@ -2314,3 +2314,8 @@ Usage (In Ghost editor):
   justify-content: center;
   align-items: center;
 }
+.author-meta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
