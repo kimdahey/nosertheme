@@ -160,10 +160,13 @@ body {
     padding: 0;
     font-size: 3.8rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .site-logo {
-    max-height: 100px;
+    max-height: 80px;
 }
 
 .site-description {
