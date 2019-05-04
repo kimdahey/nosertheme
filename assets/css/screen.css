@@ -165,6 +165,13 @@ body {
     margin-top: 20px;
 }
 
+.site-title:link,
+.site-title:visited,
+.site-title:hover,
+.site-title:active {
+    color: brown;
+}
+
 .site-logo {
     max-height: 80px;
 }

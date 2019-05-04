@@ -89,8 +89,8 @@
         <div class="site-header-content">
             <h1 class="site-title">
                 {{#if @site.logo}}
-                    <a href="{{@site.url}}"> <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" /> </a>
-                    {{@site.title}}
+                    <a href="{{@site.url}}"> <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />{{@site.title}}</a>
+
                 {{else}}
                     {{@site.title}}
                 {{/if}}
