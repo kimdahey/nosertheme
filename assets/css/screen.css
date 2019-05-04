@@ -2309,3 +2309,6 @@ Usage (In Ghost editor):
 .generatedTitle{
   text-align: center;
 }
+.tag-template .generatedTitle{
+  min-height: 100px;
+}
