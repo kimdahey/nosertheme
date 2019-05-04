@@ -98,7 +98,6 @@ body {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        margin-top: -70px;
         padding-top: 0;
     }
     .home-template .site-nav {
@@ -2311,4 +2310,7 @@ Usage (In Ghost editor):
 }
 .tag-template .generatedTitle{
   min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
