@@ -94,9 +94,11 @@
                     {{@site.title}}
                 {{/if}}
             </h1>
-
-        {{> "site-nav"}}
+            {{^is "home"}}
+              {{> "site-nav"}}
+            {{/is}}
         </div>
+        {{> "site-nav"}}
     </div>
 </header>
 <body class="{{body_class}}">
