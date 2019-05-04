@@ -2311,7 +2311,9 @@ Usage (In Ghost editor):
 .generatedTitle{
   text-align: center;
 }
-.tag-template .generatedTitle{
+
+.tag-template .generatedTitle,
+.author-template .generatedTitle {
   min-height: 100px;
   display: flex;
   justify-content: center;
