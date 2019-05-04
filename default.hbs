@@ -78,9 +78,8 @@
   color: rgba(255, 0, 0, 0.2);
 }
 
-}
-#JoinUs{
-  cursor: pointer; 
+.joinUs{
+  cursor: pointer;
 }
 </style>
 
@@ -116,7 +115,7 @@
                       </div>
                     </div>
 
-<span id="JoinUs" style="" onclick="openNav()">Join Us</span>
+<span class="joinUs" onclick="openNav()">Join Us</span>
 
 
                     {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
