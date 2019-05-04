@@ -79,6 +79,9 @@
 }
 
 }
+#JoinUs{
+  cursor: pointer; 
+}
 </style>
 
 </head>
@@ -113,7 +116,7 @@
                       </div>
                     </div>
 
-<span style="" onclick="openNav()">Join Us</span>
+<span id="JoinUs" style="" onclick="openNav()">Join Us</span>
 
 
                     {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
