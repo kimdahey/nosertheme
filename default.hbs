@@ -90,6 +90,7 @@
             <h1 class="site-title">
                 {{#if @site.logo}}
                     <a href="{{@site.url}}"> <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" /> </a>
+                    {{@site.title}}
                 {{else}}
                     {{@site.title}}
                 {{/if}}
