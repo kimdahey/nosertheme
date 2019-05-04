@@ -165,10 +165,10 @@ body {
     margin-top: 20px;
 }
 
-.site-title:link,
-.site-title:visited,
-.site-title:hover,
-.site-title:active {
+a.site-title:link,
+a.site-title:visited,
+a.site-title:hover,
+a.site-title:active {
     color: brown;
 }
 
