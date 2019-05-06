@@ -2244,6 +2244,13 @@ h2.author-bio {
     background: color(var(--darkgrey) l(-15%));
 }
 
+.home-template .site-footer {
+    position: fixed;
+    bottom: 0px;
+    z-index: 888;
+    width: 100%;
+}
+
 .site-footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -2363,7 +2370,7 @@ h2.author-bio {
     width: 100%;
     display: none;
     position: fixed;
-    z-index: 9999999999;
+    z-index: 999;
     top: 0;
     left: 0;
     text-align: center;
