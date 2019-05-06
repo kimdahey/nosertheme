@@ -3,7 +3,7 @@
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="inner">
-        {{#get "tags" limit="all"}}
+        {{#get "tags" limit="all" filter: "tags:-[arts, business]"}}
             <ul class="tags">
                 {{#foreach tags}}
                     <li>
