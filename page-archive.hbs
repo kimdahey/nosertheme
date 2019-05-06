@@ -4,7 +4,6 @@
 <main id="site-main" class="site-main outer">
     <div class="inner">
         {{#get "tags" limit="all"}}
-            {{!-- {{#is_issue tags}} --}}
                 <ul class="tags">
                     {{#foreach tags}}
                         <li>
@@ -12,7 +11,6 @@
                         </li>
                     {{/foreach}}
                 </ul>
-            {{!-- {{/is_issue}} --}}
         {{/get}}
     </div>
 </main>
