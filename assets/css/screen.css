@@ -2300,6 +2300,9 @@ h2.author-bio {
 
 .site-footer-line {
     display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+    text-align: center;
 }
 
 .site-footer-nav {
