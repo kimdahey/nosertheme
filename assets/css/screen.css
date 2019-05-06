@@ -160,6 +160,7 @@ body {
     padding: 0;
     font-size: 3.8rem;
     font-weight: 700;
+    font-family: 'Merriweather';
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -688,7 +689,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-header {
     margin: 0 auto;
-    padding: 6vw 3vw 3vw;
+    padding: 3vw 3vw 3vw;
     max-width: 1040px;
     text-align: center;
 }
@@ -2327,6 +2328,11 @@ Usage (In Ghost editor):
   justify-content: center;
   align-items: center;
 }
+
+.generatedTitle .site-title {
+    margin: 0;
+}
+
 .author-meta{
   display: flex;
   justify-content: center;
