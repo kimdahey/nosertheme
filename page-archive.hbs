@@ -3,7 +3,7 @@
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="inner">
-        {{#get "tags" limit="all" filter="name:-[arts, business, campus-life, news-in-pictures, off-campus, opinion, politics, science-and-technology, sports]+tags:[arts, opinion]"}}
+        {{#get "tags" limit="all" filter="tags:-[arts, business, campus-life, news-in-pictures, off-campus, opinion, politics, science-and-technology, sports]"}}
                 <ul class="tags">
                     {{#foreach tags}}
                         <li>
