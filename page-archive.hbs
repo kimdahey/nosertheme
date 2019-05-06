@@ -4,7 +4,9 @@
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
-        <h1>hello help hai</h1>
+        {{#get "tags" limit="all"}}
+            <div class='experiment'>{{tags}}</div>
+        {{/get}}
 
     </div>
 </main>
