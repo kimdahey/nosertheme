@@ -1,5 +1,6 @@
 {{!< default}}
 
+<<<<<<< HEAD
 {{! This is a page template. A page outputs content just like any other post, and has all the same
     attributes by default, but you can also customise it to behave differently if you prefer. }}
 
@@ -26,5 +27,31 @@
             {{/get}}
         </div>
     </div>
+=======
+<header class="site-header outer">
+<div class="inner">
+{{> "site-nav"}}
+</div>
+</header>
+
+{{#post}}
+
+<main id="site-main" class="site-main outer" role="main">
+<div class="inner">
+<header class="post-full-header">
+<h1 class="post-full-title">{{title}}</h1>
+</header>
+
+{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+{{#foreach tags}}
+
+<h2>{{ name }} <small>({{ count.posts }})</small></h2>
+
+{{/foreach}}
+{{/get}}
+
+</div>
+>>>>>>> 279f333772765e7606f821ce603bb7e31fa2e60e
 </main>
 
+{{/post}}
