@@ -2286,6 +2286,11 @@ h2.author-bio {
     flex-direction: column;
 }
 
+
+.site-footer-line {
+    display: flex;
+}
+
 .site-footer-nav {
     display: flex;
 }
