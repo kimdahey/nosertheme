@@ -2238,13 +2238,14 @@ h2.author-bio {
 
 .site-footer {
     position: relative;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding: 10px 0px;
     color: #fff;
     background: color(var(--darkgrey) l(-15%));
 }
 
-.home-template .site-footer {
+.home-template .site-footer,
+.tag-template .site-footer,
+.author-template .site-footer {
     position: fixed;
     bottom: 0px;
     z-index: 888;
