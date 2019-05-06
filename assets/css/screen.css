@@ -736,17 +736,16 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media (max-width: 1170px) {
     .post-full-image {
-        margin: 0 -4vw -100px;
         border-radius: 0;
     }
     .post-full-image img {
-        height: 600px;
+        width: 50%;
     }
 }
 
 @media (max-width: 800px) {
     .post-full-image img {
-        height: 400px;
+        width: 70%; 
     }
 }
 
