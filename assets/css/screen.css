@@ -1971,6 +1971,10 @@ Usage (In Ghost editor):
     text-align: center;
 }
 
+h2.author-bio {
+    margin: 0 0 .5em;
+}
+
 .site-header-content .author-meta {
     z-index: 10;
     flex-shrink: 0;
