@@ -728,7 +728,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-image img {
-    width: 100%;
+    width: 45%;
     object-fit: cover;
 }
 
