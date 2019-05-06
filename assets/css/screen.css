@@ -2255,9 +2255,11 @@ h2.author-bio {
 .site-footer-content section {
     color: rgba(255,255,255,0.7);
 }
+
 .site-footer-content span {
     color: rgba(255,255,255,0.7);
 }
+
 .site-footer-content a {
     color: rgba(255,255,255,0.7);
 }
@@ -2266,9 +2268,15 @@ h2.author-bio {
     color: rgba(255,255,255,1);
     text-decoration: none;
 }
+
 .site-footer-content span:hover {
     color: rgba(255,255,255,1);
     text-decoration: none;
+}
+
+.site-footer-content.inner {
+    display: flex;
+    flex-direction: column;
 }
 
 .site-footer-nav {
