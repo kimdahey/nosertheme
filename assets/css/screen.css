@@ -2319,6 +2319,7 @@ Usage (In Ghost editor):
 
 .generatedTitle{
   text-align: center;
+  font-size: 4rem;
 }
 
 .tag-template .generatedTitle,
@@ -2331,7 +2332,6 @@ Usage (In Ghost editor):
 
 .generatedTitle .site-title {
     margin: 0;
-    font-size: 4rem;
 }
 
 .author-meta{
