@@ -745,7 +745,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media (max-width: 800px) {
     .post-full-image img {
-        width: 70%; 
+        width: 70%;
     }
 }
 
@@ -1105,7 +1105,6 @@ Usage (In Ghost editor):
     }
     .post-full-image {
         margin-bottom: 4vw;
-        height: 350px;
     }
     .post-full-content {
         padding: 0;
