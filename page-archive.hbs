@@ -23,7 +23,24 @@
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="inner">
-        <h1>hey</h1>
+        <div class="archive-list">
+            {{#get 'posts' limit='all'}}
+            {{#group posts by='function (item) {  var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; return monthNames[(new Date(item.published_at).getMonth())]+" "+(new Date(item.published_at)).getFullYear(); } '}}
+                <b>{{ key }} </b>
+                <br>
+                {{#each items}}
+                <span>
+                    {{#if featured}}
+                    <span class='fa fa-star'></span>
+                    {{/if}}
+                    {{date published_at format="MMM DD, YYYY"}}:&nbsp;
+                    <a href="{{url}}">{{title}} </a>
+                </span>
+                <br>
+                {{/each}}
+            {{/group}}
+            {{/get}}
+        </div>
     </div>
 </main>
 
