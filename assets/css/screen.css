@@ -2379,23 +2379,82 @@ h2.author-bio {
 /* CUSTOM CSS AS NOSER */
 
 
-.overlay {
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    text-align: center;
-    background-color: rgba(227, 227, 227, 0.8);
+    .overlay {
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: rgba(227, 227, 227, 0.8);
+            -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 1s; /* Firefox < 16 */
+                -ms-animation: fadein 1s; /* Internet Explorer */
+                -o-animation: fadein 1s; /* Opera < 12.1 */
+                    animation: fadein 1s;
+    }
+
+    #search-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20%;
         -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
         -moz-animation: fadein 1s; /* Firefox < 16 */
             -ms-animation: fadein 1s; /* Internet Explorer */
             -o-animation: fadein 1s; /* Opera < 12.1 */
                 animation: fadein 1s;
     }
+
+    #ghost-search-results {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overlay-content {
+    width: 50%;
+    color: black;
+    font-size: 16px;
+    background-color: ghostwhite;
+    margin: 10% auto;
+    padding: 20px 20px 10px;
+    }
+
+    .overlay a:active, .overlay a:visited {
+        color: black;
+    }
+
+
+    .overlay a:hover, .overlay a:focus {
+        color: rgba(255, 0, 0);
+    }
+
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+    }
+
+    .joinUs{
+    cursor: pointer;
+    }
+
+    
 
     @keyframes fadein {
         from { opacity: 0; }
@@ -2425,44 +2484,6 @@ h2.author-bio {
         from { opacity: 0; }
         to   { opacity: 1; }
     }
-
-    .overlay-content {
-    width: 50%;
-    color: black;
-    font-size: 16px;
-    background-color: ghostwhite;
-    margin: 10% auto;
-    padding: 20px 20px 10px;
-    }
-
-
-    .overlay a:hover, .overlay a:focus, .overlay a:visited {
-        color: rgba(255, 0, 0, 0.2);
-    }
-
-    /* Position the close button (top right corner) */
-    .overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
-
-    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-    @media screen and (max-height: 450px) {
-        .overlay a {font-size: 20px}
-        .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-        }
-    }
-
-    .joinUs{
-    cursor: pointer;
-    }
-
-    
 
     /* styling for archive page */
 
