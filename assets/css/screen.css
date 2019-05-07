@@ -362,6 +362,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .site-header {
         padding-right: 0;
         padding-left: 0;
+    }
+    .site-title {
         font-size: 4rem;
     }
 }
@@ -2409,6 +2411,10 @@ h2.author-bio {
                 animation: fadein 1s;
     }
 
+    #ghost-search-field {
+        margin-bottom: 20px;
+    }
+
     #ghost-search-results {
         display: flex;
         flex-direction: column;
@@ -2424,6 +2430,7 @@ h2.author-bio {
 
     .search-overlay-content {
         color: black;
+        padding: 30px 0;
         background-color: ghostwhite;
     }
 
