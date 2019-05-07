@@ -260,7 +260,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .nav {
     display: flex;
-    margin: 0 0 0 -12px;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -387,7 +387,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     }
     .site-nav-right {
         display: block;
-        margin-left: -4%x;
+        margin-left: 2%;
         padding-block-end: 10px;
     }
     .nav {
