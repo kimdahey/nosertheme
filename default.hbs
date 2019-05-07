@@ -27,7 +27,7 @@
         function closeNav() {
         document.getElementById("myNav").style.display = "none";
         }
-        
+
         var images = document.querySelectorAll('.kg-gallery-image img');
         images.forEach(function (image) {
             var container = image.closest('.kg-gallery-image');
@@ -68,7 +68,7 @@
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
                 <nav class="site-footer-nav">
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Archive</a>
+                    <a href="{{@site.url}}/archive/" target="_blank" rel="noopener">Archive</a>
                     <span class="joinUs" onclick="openNav()">Join Us</span>
                         <div id="myNav" class="overlay" onclick="closeNav()">
                         <div class="overlay-content">
