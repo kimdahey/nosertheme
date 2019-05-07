@@ -38,15 +38,15 @@
         })
     </script>
     <script>
-      (function() {
-        var cx = '004415967344131953304:7ibweyegsre';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
+      //(function() {
+      //  var cx = '004415967344131953304:7ibweyegsre';
+      //  var gcse = document.createElement('script');
+      //  gcse.type = 'text/javascript';
+      //  gcse.async = true;
+      //  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      //  var s = document.getElementsByTagName('script')[0];
+      //  s.parentNode.insertBefore(gcse, s);
+      //})();
     </script>
 
 </head>
@@ -67,10 +67,12 @@
             <!-- this script is for google custome search -->
 
             <!-- this is insertion for div -->
-      <div>
-          <input id="search-input" type="text" placeholder="Type to search" />
-          <div id="search-result"></div>
-      </div>
+            <!-- <div> --> 
+            <!--     <input id="search-input" type="text" placeholder="Type to search" /> -->
+            <!--     <div id="search-result"></div> -->
+            <!-- </div> --> 
+      <input id="ghost-search-field">
+      <div id="ghost-search-results"></div>
       <!-- <div class="google_search">   -->
       <!--   <gcse:search></gcse:search> -->
       <!-- </div> -->
@@ -137,12 +139,19 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
-    <script src="{{asset "ghost-finder/dist/ghost-finder.js"}}"></script>
+    <!-- <script src="{{asset "ghost-finder/dist/ghost-finder.js"}}"></script> -->
+    <script type="text/javascript" src="{{asset "js/ghost-search.min.js"}}"></script>
     <script>
-    new GhostFinder({
-        input: '#search-input',
-        showResult: '#search-result',
-        contentApiKey: "00c16efc3c9da119834202be4e"//CONTENT API KEY...,
+    // new GhostFinder({
+    //     input: '#search-input',
+    //     showResult: '#search-result',
+    //     contentApiKey: "00c16efc3c9da119834202be4e"//CONTENT API KEY...,
+    // })
+    </script>
+    <script type="text/javascript">
+    let ghostSearch = new GhostSearch({
+        key: "00c16efc3c9da119834202be4e", // This is just a demo key. Replace the key with a real one. See Step 3.
+        host: 'https://ec2-54-156-44-207.compute-1.amazonaws.com', // This is just a demo host. Replace the host with a real one. See Step 3.
     })
     </script>
     {{#if pagination.pages}}
