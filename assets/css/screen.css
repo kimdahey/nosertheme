@@ -372,7 +372,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 0;
         font-size: 4rem;
     }
-    .site-nav {
+    /* .site-nav {
         align-items: center;
         height: 100%;
         justify-content: center;
@@ -385,7 +385,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .nav {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 }
 
 
