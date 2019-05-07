@@ -53,6 +53,22 @@
                     {{/if}}
                 </h1>
             </a>
+            <!-- this script is for google custome search -->
+            <script>
+              (function() {
+                var cx = '004415967344131953304:bbqm_eeljj4';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+            </script>
+            <!-- this is insertion for div -->
+            <div class="google_search">
+              <gcse:search></gcse:search>
+            </div>
         </div>
         {{> "site-nav"}}
     </div>
