@@ -67,6 +67,7 @@
             <!-- this script is for google custome search -->
 
             <!-- this is insertion for div -->
+<<<<<<< HEAD
             <!-- <div> --> 
             <!--     <input id="search-input" type="text" placeholder="Type to search" /> -->
             <!--     <div id="search-result"></div> -->
@@ -76,6 +77,11 @@
       <!-- <div class="google_search">   -->
       <!--   <gcse:search></gcse:search> -->
       <!-- </div> -->
+=======
+            <div class="google_search">
+              <gcse:search></gcse:search>
+            </div>
+>>>>>>> fdb15a8bf4ec8ed7c56105a486e856f24d62db3b
         </div>
         {{> "site-nav"}}
     </div>
@@ -139,6 +145,7 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
+
     <!-- <script src="{{asset "ghost-finder/dist/ghost-finder.js"}}"></script> -->
     <script type="text/javascript" src="{{asset "js/ghost-search.min.js"}}"></script>
     <script>
@@ -154,7 +161,10 @@
         host: 'https://ec2-54-156-44-207.compute-1.amazonaws.com', // This is just a demo host. Replace the host with a real one. See Step 3.
     })
     </script>
-    
+
+    {{#if pagination.pages}}
+    <script src="{{asset "built/infinitescroll.js"}}"></script>
+    {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}
