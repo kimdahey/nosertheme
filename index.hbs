@@ -29,7 +29,9 @@ into the {body} of the default.hbs template --}}
             {{/foreach}}
         </div>
 
-        {{> pagination}}
+        {{#if pagination.pages}}
+            {{> pagination}}
+        {{/if}}
 
     </div>
 </main>
