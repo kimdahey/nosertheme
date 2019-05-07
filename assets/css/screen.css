@@ -2415,12 +2415,16 @@ h2.author-bio {
     }
 
     .overlay-content {
-    width: 50%;
-    color: black;
-    font-size: 16px;
-    background-color: ghostwhite;
-    margin: 10% auto;
-    padding: 20px 20px 10px;
+        width: 50%;
+        font-size: 16px;
+        background-color: ghostwhite;
+        margin: 10% auto;
+        padding: 20px 20px 10px;
+    }
+
+    .search-overlay-content {
+        color: black;
+        background-color: ghostwhite;
     }
 
     .overlay a:active, .overlay a:visited {
