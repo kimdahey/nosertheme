@@ -2437,12 +2437,32 @@ h2.author-bio {
 
 
     .overlay a:hover, .overlay a:focus, .overlay a:visited {
-    color: rgba(255, 0, 0, 0.2);
+        color: rgba(255, 0, 0, 0.2);
+    }
+
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
     }
 
     .joinUs{
     cursor: pointer;
     }
+
+    
 
     /* styling for archive page */
 
