@@ -2419,7 +2419,7 @@ h2.author-bio {
         display: flex;
         flex-direction: column;
     }
-    p #search-button{
+    p#search-button{
       background: black;
       color: white;
       width: 20%;
