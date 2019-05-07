@@ -2442,3 +2442,16 @@ h2.author-bio {
     .joinUs{
     cursor: pointer;
     }
+
+    /* styling for archive page */
+
+    ul.issue-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li.issue-individual {
+        list-style-type: none;
+        width: 20%;
+        text-align: center;
+    }
