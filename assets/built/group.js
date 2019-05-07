@@ -1,0 +1,2 @@
+function parseFunction(n){var e=/function *\(([^()]*)\)[ \n\t]*{(.*)}/gim.exec(n.replace(/\n/g," "));return e?new Function(e[1].split(","),e[2]):null}function noop(){return""}module.exports=function(n,e){var t=(e=e||{}).inverse||noop,r=e.fn||noop,u=parseFunction(e.hash.by),o=[],i={};if(!u||!n||!n.length)return t(this);return n.forEach(function(n){var e=u(n);-1===o.indexOf(e)&&o.push(e),i[e]||(i[e]={key:e,items:[]}),i[e].items.push(n)}),o.reduce(function(n,e){return n+r(i[e])},"")};
+//# sourceMappingURL=group.js.map

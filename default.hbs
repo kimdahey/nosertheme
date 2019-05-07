@@ -67,9 +67,13 @@
             <!-- this script is for google custome search -->
 
             <!-- this is insertion for div -->
-            <div class="google_search">
-              <gcse:search></gcse:search>
-            </div>
+      <div>
+          <input id="search-input" type="text" placeholder="Type to search" />
+          <div id="search-result"></div>
+      </div>
+      <!-- <div class="google_search">   -->
+      <!--   <gcse:search></gcse:search> -->
+      <!-- </div> -->
         </div>
         {{> "site-nav"}}
     </div>
@@ -133,7 +137,14 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
-
+    <script src="{{asset "ghost-finder/dist/ghost-finder.js"}}"></script>
+    <script>
+    new GhostFinder({
+        input: '#search-input',
+        showResult: '#search-result',
+        contentApiKey: "00c16efc3c9da119834202be4e"//CONTENT API KEY...,
+    })
+    </script>
     {{#if pagination.pages}}
     <script src="{{asset "built/infinitescroll.js"}}"></script>
     {{/if}}
