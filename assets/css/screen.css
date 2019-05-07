@@ -157,7 +157,7 @@ body {
     z-index: 10;
     margin: 0;
     padding: 0;
-    font-size: 6.3rem;
+    font-size: 5rem;
     font-weight: 700;
     font-family: 'Merriweather';
     display: flex;
@@ -2017,6 +2017,11 @@ h2.author-bio {
     }
 }
 
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 4rem;
+    }
+}
 
 /* 9. Error Template
 /* ---------------------------------------------------------- */
