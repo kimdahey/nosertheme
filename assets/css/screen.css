@@ -2398,6 +2398,7 @@ h2.author-bio {
     }
 
     #search-overlay {
+        display: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
