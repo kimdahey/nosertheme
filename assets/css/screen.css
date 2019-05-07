@@ -195,8 +195,8 @@ a.title-link:active {
     position: relative;
     z-index: 300;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: center;
     overflow-y: hidden;
     font-size: 1.3rem;
     border-top: 1px solid black;
@@ -207,6 +207,7 @@ a.title-link:active {
 .site-nav-left {
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
