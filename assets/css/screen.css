@@ -157,7 +157,7 @@ body {
     z-index: 10;
     margin: 0;
     padding: 0;
-    font-size: 6.3rem;
+    font-size: 5rem;
     font-weight: 700;
     font-family: 'Merriweather';
     display: flex;
@@ -187,15 +187,6 @@ a.title-link:active {
     opacity: 0.8;
 }
 
-@media (max-width: 500px) {
-    .site-title {
-        font-size: 3rem;
-    }
-    .site-description {
-        font-size: 1.8rem;
-    }
-}
-
 
 /* 5. Site Navigation
 /* ---------------------------------------------------------- */
@@ -207,7 +198,6 @@ a.title-link:active {
     justify-content: space-between;
     align-items: flex-start;
     overflow-y: hidden;
-    height: 40px;
     font-size: 1.3rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -221,11 +211,13 @@ a.title-link:active {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     margin-right: 10px;
-    padding-bottom: 80px;
     letter-spacing: 0.4px;
     white-space: nowrap;
-
     -ms-overflow-scrolling: touch;
+}
+
+ul.nav {
+    margin: 0;
 }
 
 /* Site Nav Hack Explanation (above):
@@ -260,7 +252,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .nav {
     display: flex;
-    margin: 0 0 0 -12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -286,13 +280,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .nav li a:hover {
     text-decoration: none;
     opacity: 1;
-}
-
-.site-nav-right {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    height: 40px;
 }
 
 .social-links {
@@ -374,25 +361,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .site-header {
         padding-right: 0;
         padding-left: 0;
-    }
-    .site-nav {
-        align-items: center;
-        height: 100%;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .site-nav-left {
-        margin: 0;
-        padding: 10px 0 0 0;
-    }
-    .site-nav-right {
-        display: block;
-        margin-left: -4%x;
-        padding-block-end: 10px;
-    }
-    .nav {
-        flex-direction: column;
-        align-items: center;
+        font-size: 4rem;
     }
 }
 
@@ -704,9 +673,30 @@ make sure this only happens on large viewports / desktop-ish devices.
     max-width: 1040px;
     text-align: center;
 }
+
 @media (max-width: 500px) {
     .post-full-header {
         padding: 14vw 3vw 10vw;
+    }
+    .site-title {
+        font-size: 3rem;
+    }
+    .site-description {
+        font-size: 1.8rem;
+    }
+    .site-nav {
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .site-nav-left {
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -2025,6 +2015,11 @@ h2.author-bio {
     }
 }
 
+@media (min-width: 500px) and (max-width: 600px) {
+    .site-title {
+        font-size: 4rem;
+    }
+}
 
 /* 9. Error Template
 /* ---------------------------------------------------------- */
