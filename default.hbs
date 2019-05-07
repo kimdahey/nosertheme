@@ -37,6 +37,17 @@
             container.style.flex = ratio + ' 1 0%';
         })
     </script>
+    <script>
+(function() {
+  var cx = '004415967344131953304:vcr59dlagje';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script>
 
 </head>
 {{> header background=feature_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
@@ -54,17 +65,7 @@
                 </h1>
             </a>
             <!-- this script is for google custome search -->
-            <script>
-        (function() {
-          var cx = '004415967344131953304:vcr59dlagje';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
+
             <!-- this is insertion for div -->
             <div class="google_search">
               <gcse:search></gcse:search>
