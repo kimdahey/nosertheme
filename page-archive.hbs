@@ -4,9 +4,9 @@
 <main id="site-main" class="site-main outer">
     <div class="inner">
         {{#get "tags" limit="all" filter="name:-[arts, business, 'campus life', 'news in pictures', 'off campus', opinion, politics, 'science & technology', sports]"}}
-                <ul class="tags">
+                <ul class="issue-list">
                     {{#foreach tags}}
-                        <li>
+                        <li class="issue-individual">
                             <a href="{{url}}">{{name}}</a>
                         </li>
                     {{/foreach}}
