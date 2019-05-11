@@ -148,7 +148,7 @@ body {
 
 .site-header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 200px;
     max-height: 450px;
 }
@@ -2420,6 +2420,17 @@ h2.author-bio {
         flex-direction: column;
         padding: 10px;
     }
+    p#search-button{
+      background: black;
+      color: white;
+      width: 20%;
+      text-align: center;
+      font-size: 2rem;
+      align-self: center;
+      margin-left: auto;
+      margin-right: 40px;
+      padding: 10px;
+    }
 
     .overlay-content {
         width: 50%;
@@ -2466,7 +2477,7 @@ h2.author-bio {
     cursor: pointer;
     }
 
-    
+
 
     @keyframes fadein {
         from { opacity: 0; }
@@ -2503,7 +2514,7 @@ h2.author-bio {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     li.issue-individual {
         list-style-type: none;
         width: 20%;
