@@ -2418,6 +2418,7 @@ h2.author-bio {
     #ghost-search-results {
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
 
     .overlay-content {
