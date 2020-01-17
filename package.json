@@ -50,11 +50,7 @@
         "beeper": "1.1.1",
         "cssnano": "4.1.10",
         "gscan": "2.4.1",
-        "gulp": "4.0.0",
-        "gulp-livereload": "4.0.1",
-        "gulp-postcss": "8.0.0",
-        "gulp-uglify": "3.0.2",
-        "gulp-zip": "4.2.0",
+        "gulp": "^4.0.2",
         "postcss-color-function": "4.1.0",
         "postcss-custom-properties": "8.0.10",
         "postcss-easy-import": "3.0.0",
@@ -82,5 +78,12 @@
                 "width": 2000
             }
         }
+    },
+    "dependencies": {
+        "gulp-livereload": "^4.0.2",
+        "gulp-postcss": "^8.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-zip": "^5.0.1",
+        "nstall": "^0.2.0"
     }
 }

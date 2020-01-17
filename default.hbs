@@ -69,8 +69,9 @@
 
                 <!-- Overlay content -->
                 <div class='search-overlay-content'>
-                    <input id="ghost-search-field" placeholder="Search the Brown Noser">
-                    <div id="ghost-search-results"></div>
+                    <input id="search-field" placeholder="Search the Brown Noser">
+		    <input type="submit" value="search">
+                    <div id="results"></div>
                 </div>
 
             </div>
@@ -140,7 +141,13 @@
 
     <!-- <script src="{{asset "ghost-finder/dist/ghost-finder.js"}}"></script> -->
     <script type="text/javascript" src="{{asset "js/content-api.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/ghost-search.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
+    <script>
+    $("#search-field").ghostHunter({
+      results: "#results"
+    });
+    </script>
+    <!-- <script type="text/javascript" src="{{asset "js/ghost-search.min.js"}}"></script>
     <script>
     // new GhostFinder({
     //     input: '#search-input',
@@ -154,6 +161,7 @@
         host: 'https://ec2-54-198-225-232.compute-1.amazonaws.com', // This is just a demo host. Replace the host with a real one. See Step 3.
     })
     </script>
+    -->
 
     {{#if pagination.pages}}
     <script src="{{asset "built/infinitescroll.js"}}"></script>
