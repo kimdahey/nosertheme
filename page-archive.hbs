@@ -7,8 +7,11 @@
         {{#get "tags" limit="all" filter="name:-[arts, business, 'campus life', 'news in pictures', 'off campus', opinion, politics, 'science & technology', sports]"}}
                 <ul class="issue-list">
                     {{#foreach tags}}
+                        {{!-- // get posts
+                        // {{ #pick "1" post}}
+                            // list date + tag --}}
                         <li class="issue-individual">
-                            <a href="{{url}}">{{date format="YYYY-MM-DD"}}</a>s 
+                            <a href="{{url}}">{{date format="YYYY-MM-DD"}} {{name}} </a>
                         </li>
                     {{/foreach}}
                 </ul>
