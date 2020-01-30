@@ -85,6 +85,11 @@
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
+	    
+	{{#if pagination.pages}}
+	    {{pagination}}
+	    <!-- <script src="{{asset "built/infinitescroll.js"}}"></script> -->
+    	{{/if}}
 
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
@@ -163,9 +168,6 @@
     </script>
     -->
 
-    {{#if pagination.pages}}
-    <script src="{{asset "built/infinitescroll.js"}}"></script>
-    {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}
